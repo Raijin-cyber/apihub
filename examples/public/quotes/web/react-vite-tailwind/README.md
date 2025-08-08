@@ -1,3 +1,13 @@
+## Live Website
+
+    [Random Quote Generator](https://quotegenerator-three-henna.vercel.app)        
+
+## 🧠 Dependencies Used
+
+1. React + Vite
+2. Tailwind Css
+3. tsParticles 
+
 ## 🚀 Installation and Setup
 
 1. **Fork** the repo to your GitHub account, then **clone** it to your local machine:
