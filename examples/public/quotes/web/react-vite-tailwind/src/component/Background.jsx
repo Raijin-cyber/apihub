@@ -27,6 +27,7 @@ const Background = () => {
     console.log(container);
   };
 
+  // adding styles as per your requirements
   const options = useMemo(
     () => ({
       background: {

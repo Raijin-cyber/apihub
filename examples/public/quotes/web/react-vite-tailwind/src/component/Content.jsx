@@ -9,27 +9,29 @@ const Content = () => {
 
   // function to generate a random number between 1 and 300
   const getId = () => {
-    return Math.floor(Math.random() * 300) + 1; // 1..300
+    // 1..300
+    return Math.floor(Math.random() * 300) + 1; 
   }
   
   // function to fetch quote from the API endpoint
-  const getQuote = async() => {
+  const getQuote = async () => {
     try {
-      const data = await fetch(`${BASE_url}/${getId()}`);
+      const res = await fetch(`${BASE_url}/${getId()}`);
+      const { data } = await res.json();
 
-      // converting data to a feasible response using json method 
-      const response = await data.json();
-
-      // updating state of quote and author variables
-      setAuthor(response.data.author);
-      setQuote(response.data.content);
-
+      if (data) {
+        const { author, content } = data;
+        setAuthor(author);
+        setQuote(content);
+      } else {
+        console.warn("No quote data found");
+      }
     } catch (error) {
-      // if there was an error while request then log it in the console
-      console.log(error);
+      console.error("Failed to fetch quote:", error);
     }
-  }
+  };
 
+  // this hook runs on the effect of the changes, as the dependency array is empty hence it will run on page load or reload.
   useEffect(() => {
     getQuote();
   }, [])

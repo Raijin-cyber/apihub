@@ -1,3 +1,4 @@
+// importing required components
 import Background from './component/Background';
 import Content from './component/Content';
 
