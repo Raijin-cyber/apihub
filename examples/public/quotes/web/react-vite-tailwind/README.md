@@ -1,6 +1,6 @@
 ## Live Website
 
-    [Random Quote Generator](https://quotegenerator-three-henna.vercel.app)        
+[Random Quote Generator](https://quotegenerator-three-henna.vercel.app)        
 
 ## 🧠 Dependencies Used
 
