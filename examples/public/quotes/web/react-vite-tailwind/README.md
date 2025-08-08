@@ -1,12 +1,45 @@
-# React + Vite
+## 🚀 Installation and Setup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. **Fork** the repo to your GitHub account, then **clone** it to your local machine:
+   ```bash
+   git clone https://github.com/your-username/repo-name.git
+   ```
 
-Currently, two official plugins are available:
+2. In the root folder, install dependencies:
+   ```bash
+   npm i
+   ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. Follow the Tailwind CSS setup guide for Vite:
+   👉 [Tailwind Vite Setup](https://tailwindcss.com/docs/installation/using-vite)
 
-## Expanding the ESLint configuration
+4. Install **tsParticles** library for animated background:
+   ```bash
+   npm i @tsparticles/all
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. Go to **FreeAPI's documentation**, and find the "Get Quote by ID" section:  
+   👉 [FreeAPI Docs](https://freeapi.hashnode.space/api-guide/apireference/getQuoteById)
+
+6. Create a `.env` file in the root folder and paste the content from `.env.sample` into it.
+
+7. Copy the API endpoint URL from the FreeAPI docs and modify it:  
+   From:
+   ```
+   https://api.freeapi.app/api/v1/public/quotes/{quoteId}
+   ```
+   To:
+   ```
+   https://api.freeapi.app/api/v1/public/quotes
+   ```  
+   Then paste this into the `BASE_url` key in your `.env` file (within quotes).
+
+8. Save everything, then run the app:
+   ```bash
+   clear
+   npm run dev
+   ```
+
+---
+
+🎉 **Enjoy the app!** 🥳🥳
